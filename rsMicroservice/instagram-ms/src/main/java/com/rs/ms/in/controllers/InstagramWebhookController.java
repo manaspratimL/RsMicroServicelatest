@@ -51,8 +51,8 @@ public class InstagramWebhookController {
 	public SubscriptionResponse createSubs() throws IOException {
 		
 		InstagramSubscriptionService igSub = new InstagramSubscriptionService()
-                .clientId("26aac1561ae3450688f655bac9369868")
-                .clientSecret("0cfc3d0b91054025b4329b7257032417")
+                .clientId("")
+                .clientSecret("")
                 .object("user")
                 .aspect("media")
                 .callback("http://yourcallbackurl/handleSubscription")
